@@ -5,7 +5,7 @@
 }
 
 .App-header {
-  height: 4rem; 
+  height: 3.5rem; 
   display: flex;
   align-items: center;
   padding: 0.5rem 2rem;
@@ -26,6 +26,7 @@
 
 .categories a{
   color: #fff;
+  font-size: 1.1rem;
   text-decoration: none;
   cursor: pointer;
 }
@@ -45,14 +46,15 @@
   border-right: 1px solid #ccc;
   padding: 1rem;
   overflow-y: auto;
-  background: #eee;
-  padding-left: 2rem;
+  background: #dbdbdb;
+  padding-left: 1.5rem;
 }
 
 .sideBar h2{
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  margin-left: 0.2rem;
 }
 
 .sideBar ul{
@@ -62,9 +64,10 @@
 }
 
 .sideBar ul li{
-  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 .sideBar ul li a{
+  margin-left: 0.2rem;
   color: #000000;
   text-decoration: none;
   cursor: pointer;
@@ -85,14 +88,14 @@
 
 .main h2{
   padding-left:0.5rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-top: 0;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
 
 .chat-window{
-  height: 50%;
+  height: 60%;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   padding: 1rem;
@@ -101,7 +104,9 @@
   position: relative;
 }
 
-.chat-window label{
+.chat-window div{
+  max-height: 340px;  /* 최대 높이를 지정하여 스크롤이 나타나도록 함 */
+  overflow-y: auto;  /* 내용이 넘칠 경우 스크롤 표시 */
   font-size: 1rem;
   color: #555;
   margin-bottom: 0.5rem;
@@ -163,21 +168,22 @@
 }
 
 .commands{
-  width:100%;
+  width:90%;
   position: absolute;
   bottom: 3rem;
-  left: 1.5rem;
+  left: 2rem;
 }
 
 .commands h2{
   font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 0.25rem;
+  padding-left:0;
 }
 
 .command-list{
   display: flex;
-  gap: 15%;
+  gap: 12%;
 }
 
 .command-list div{
